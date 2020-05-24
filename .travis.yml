@@ -13,6 +13,9 @@ jobs:
     - stage: test
       name: "Test"
       script: ./gradlew test
+    - stage: build & test
+      name: "Build & Test"
+      script: ./gradlew build test
     - stage: lint
       name: "Lint"
       script: ./gradlew lint
