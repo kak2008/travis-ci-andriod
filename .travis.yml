@@ -2,7 +2,7 @@ language: android
 dist: trusty
 andriod:
   components:
-    - build-tools: 28.0.0
+    - build-tools: 28.0.2
     - android-28
     - extra
 jobs:
