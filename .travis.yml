@@ -1,0 +1,18 @@
+language: android
+dist: trusty
+andriod:
+  components:
+    - build-tools: 28.0.0
+    - android-28
+    - extra
+jobs:
+  include:
+    - stage: build
+      name: "Build"
+      script: ./gradlew build
+    - stage: test
+      name: "Test"
+      script: ./gradlew test
+    - stage: lint
+      name: "Lint"
+      script: ./gradlew lint
